@@ -13,6 +13,11 @@
     color: #109da1;
   }
   
+  @media (min-width: 122px) {
+    body {
+      max-width: 900px;
+    }
+  }
   
   @media (min-width: 768px) {
     body {
@@ -20,7 +25,7 @@
     }
   }
   
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     body {
       max-width: 1900px;
     }
@@ -32,22 +37,20 @@
     align-items: center;
     padding: 16px;
     background-color: #3b3b3f;
+
   }
   
   .logo {
-    font-size: 1.2rem;
     color: #109da1;
-    font-weight: bold;
-    justify-self: start;
     box-shadow: (#e8f0fe, 0.4);
   }
   
   
-  .main-content {
+  .main {
     padding: 16px;
   }
   
-  .search-bar {
+  .busqueda {
     display: flex;
     align-items: center;
     background-color: #eef2f5;
@@ -57,7 +60,7 @@
     color: #80868b;
   }
   
-  .search-bar input {
+  .busqueda input {
     border: none;
     background: transparent;
     margin-left: 8px;
@@ -66,10 +69,6 @@
   }
   
   
-  .categorias h2, .products-section h2 {
-    font-size: 1.1rem;
-    margin-bottom: 16px;
-  }
   
   .cuadricula {
     display: flex;
@@ -81,42 +80,22 @@
     text-align: center;
   }
   
-  .icon-circle {
-    width: 56px;
-    height: 56px;
-    background-color: #e8f0fe;
-    color: #1a73e8;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 8px auto;
-    padding: 15px;
-    cursor: pointer;
-  }
-  
-  .categoria-tarjeta p {
-    font-size: 0.85rem;
-    color: #5f6368;
-  }
-  
-  
-  .productos-columnas {
+  .columnas{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
   }
   
   
   @media (min-width: 768px) {
-    .productos-columnas {
-      grid-template-columns: repeat(3, 1fr);
+    .columnas {
+      grid-template-columns: repeat(1fr);
     }
   }
   
   @media (min-width: 1200px) {
-    .productos-columnas {
-      grid-template-columns: repeat(2, 1fr);
+    .columnas {
+      grid-template-columns: repeat(1fr);
     }
   }
   
@@ -157,39 +136,4 @@
     font-weight: bold;
     margin-top: 4px;
   }
-  
-  
-  #toggle-menu:checked ~ .menu-lateral {
-    left: 0;
-  }
-  
-  #toggle-menu:checked ~ .menu-overlay {
-    display: block;
-  }
-  
-  
-  .filtro-radio {
-    display: none;
-  }
-  
-  #cat-tecnologia:checked ~ .main-content .producto-tarjeta:not(.tecnologia),
-  #cat-camisetas:checked ~ .main-content .producto-tarjeta:not(.camisetas),
-  #cat-pantalones:checked ~ .main-content .producto-tarjeta:not(.pantalones),
-  #cat-accesorios:checked ~ .main-content .producto-tarjeta:not(.accesorios)
-  {
-    display: none;
-  }
-  
-  .enlace-producto {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-  
-  
-  @media (min-width: 768px) {
-    .header,
-    .main-content {
-      padding: 24px 32px;
-    }
-  }
+

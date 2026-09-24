@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formacion Vial</title>
-    <link rel="stylesheet" href="Css/Estilos.css">
+    <link rel="stylesheet" href="Css/styless.css">
+    <link rel="stylesheet" href="img">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
-    <input type="radio" name="filtro" id="cat-todos" class="filtro-radio" checked>
-    <input type="radio" name="filtro" id="cur-moto" class="filtro-radio">
-    <input type="radio" name="filtro" id="cur-carro" class="filtro-radio">
-    
+
     <header class="header">
      <h1 class="logo">Formacion Vial</h1>
     </header>
@@ -23,51 +21,32 @@
     </main>
     <section class="categorias">
         <h2>Clases de nuestra entidad</h2>
-        <nav class="cuadricula">
-            <label for="cur-carro" class="categoria-tarjeta">
-                <div class="icon-circle material-symbols-outlined"></div>
-                <p>Curso carro</p>
-            </label>
-        
-            <label for="cur-moto" class="categoria-tarjeta"> 
-                <div class="icon-circle material-symbols-outlined">motorcycle</div>
-                <p>Curso moto</p>
-            </label>
-        
-            <label for="class-teorica" class="categoria-tarjeta">
-                <div class="icon-circle material-symbols-outlined">class</div>
-                <p>Clase teorica</p>
-            </label>    
-
-            <section class="seleciona-class">
+            <section>   
                 <div class="columnas">
-                    <a href="curmoto.html" class="enlace-producto">
                         <article class="producto-tarjeta curmoto">
                             <div class="imagen">
-                                <img src="imagenes/" alt="curmoto">
+                                <img src="img/halcon.png" alt="curmoto">
                             </div>
                             <h3 class="titulo">Curso de conduccion moto</h3>
+                            <p class="titulo">Aprende a conducir moto</p>
                             <p class="precio-producto">$999.990</p>
                             </article>
-                    </a>
-                    <a href="curcarro.html" class="enlace-producto">
                         <article class="producto-tarjeta curcarro">
                             <div class="imagen">
-                                <img src="imagenes/" alt="curcarro">
+                                <img src="img/cocodrilo.png" alt="curcarro">
                             </div>
                             <h3 class="titulo">Curso de conduccion carro</h3>
+                            <p class="titulo">Aprende a conducir carro</p>
                             <p class="precio-producto">$999.990</p>
                             </article>
-                    </a>
-                    <a href="classteorica.html" class="enlace-producto">
                         <article class="producto-tarjeta classteorica">
                             <div class="imagen">
-                                <img src="imagenes/" alt="classteorica">
+                                <img src="img/edificios.jpg" alt="classteorica">
                             </div>
                             <h3 class="titulo">Clases teoricas de conduccion</h3>
+                            <p class="titulo">Aprende la teoria de como conducir en carretera</p>
                             <p class="precio-producto">$999.990</p>
                             </article>
-                    </a>
                 </div>
             </section>
         </nav>
